@@ -1,0 +1,31 @@
+// Create these measures in Power BI Desktop (one measure per expression).
+// TABLE NAMES: FactTransactions, FactScenarioHits, FactCustomerMonthFlags, DimCustomers.
+// See docs/POWER_BI_BUILD.md for relationships and typed columns.
+
+Transactions = COUNTROWS(FactTransactions)
+
+Gross Volume USD = SUM(FactTransactions[amount_usd])
+
+Inflows USD = CALCULATE([Gross Volume USD], FactTransactions[direction] = "IN")
+
+Outflows USD = CALCULATE([Gross Volume USD], FactTransactions[direction] = "OUT")
+
+Net Inflows USD = [Inflows USD] - [Outflows USD]
+
+Active Customers = DISTINCTCOUNT(FactTransactions[customer_id])
+
+Flagged Transactions = DISTINCTCOUNT(FactScenarioHits[transaction_id])
+
+Scenario Hits = COUNTROWS(FactScenarioHits)
+
+Flagged Transaction Rate = DIVIDE([Flagged Transactions], [Transactions], 0)
+
+Customer-Month Review Flags = COUNTROWS(FactCustomerMonthFlags)
+
+Cross-Border Volume USD = CALCULATE([Gross Volume USD], FactTransactions[cross_border] = 1)
+
+Cross-Border Volume Rate = DIVIDE([Cross-Border Volume USD], [Gross Volume USD], 0)
+
+// Optional calculated columns in FactTransactions:
+// Month = FORMAT(FactTransactions[booked_at], "yyyy-MM")
+// Signed Amount USD = IF(FactTransactions[direction]="IN", FactTransactions[amount_usd], -FactTransactions[amount_usd])

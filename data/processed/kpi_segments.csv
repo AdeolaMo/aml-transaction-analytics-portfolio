@@ -1,0 +1,4 @@
+segment,transaction_count,flagged_transactions,gross_volume_usd,customers
+CORPORATE,1677,575,35403174.88,46
+RETAIL,1718,23,6505632.53,47
+SME,1672,206,16866879.17,47

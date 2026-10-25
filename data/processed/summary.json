@@ -1,0 +1,22 @@
+{
+  "synthetic": true,
+  "period_start": "2026-04-01",
+  "period_end": "2026-09-30",
+  "customers": 140,
+  "clean_transactions": 5067,
+  "raw_transactions": 5091,
+  "rejected_records": 24,
+  "gross_volume_usd": 58775686.58,
+  "flagged_transactions": 804,
+  "flagged_transaction_rate_pct": 15.87,
+  "transaction_scenario_hits": 906,
+  "customer_month_review_flags": 15,
+  "rejected_by_reason": {
+    "CROSS_BORDER_INCONSISTENT": 4,
+    "DUPLICATE_TRANSACTION_ID": 4,
+    "INVALID_AMOUNT": 4,
+    "INVALID_DATE": 4,
+    "INVALID_DIRECTION": 4,
+    "UNKNOWN_CUSTOMER": 4
+  }
+}

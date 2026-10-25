@@ -1,0 +1,5 @@
+channel,transaction_count,flagged_transactions,gross_volume_usd
+ACH,1686,51,24074886.89
+WIRE,1675,434,23429686.76
+CARD,846,0,5778519.8
+CASH,860,319,5492593.13
