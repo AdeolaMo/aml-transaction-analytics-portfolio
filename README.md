@@ -68,4 +68,4 @@ The included Power BI files are a **ready-to-import model, DAX measures and buil
 
 This *illustrative analytics project* does not apply real bank thresholds, decide whether conduct is suspicious, rate individual customers as criminals, file SARs, or make sanctions decisions. FFIEC guidance differentiates monitoring alerts, alert management and subsequent SAR decisions; see [FFIEC BSA/AML Examination Manual — Suspicious Activity Reporting](https://bsaaml.ffiec.gov/manual/AssessingComplianceWithBSARegulatoryRequirements/04).
 
-**Portfolio note:** independently created as a fictional demonstration with AI-assisted development. Review the code and results before claiming personal implementation work. [Portfolio usage guidance](docs/PORTFOLIO_USAGE.md).
+**Portfolio note:** This is a fictional demonstration, not an employer work product. Review the code, methodology and results before presenting or discussing the implementation. [Portfolio usage guidance](docs/PORTFOLIO_USAGE.md).
