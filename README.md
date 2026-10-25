@@ -58,9 +58,11 @@ A payment can trigger two illustrative scenarios, such as a large wire that is a
 | `tests/` | Eight independent tests |
 | `docs/` | Data dictionary, rules and denominators, BI guide, validation, usage/privacy |
 
-## Publish to GitHub
+## Portfolio access
 
-This archive does not publish itself. Follow the [GitHub publishing instructions](docs/PUBLISH_TO_GITHUB.md) to create a **new public** AdeolaMo repository and push these project files. The private Project Insight repositories remain unchanged.
+This repository is the public, independently created **synthetic AML transaction-analysis portfolio**. Explore the Excel dashboard above, review the reproducible SQL/Python pipeline, or open the offline HTML dashboard from `dashboard/index.html`. The repository does not contain private Project Insight materials.
+
+The included Power BI files are a **ready-to-import model, DAX measures and build guide**, not a native `.pbix` report.
 
 ## Professional and regulatory boundary
 
